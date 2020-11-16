@@ -169,7 +169,7 @@ def load_many_images_twomask(src):
     filenames = os.listdir(src)
     for fname in filenames:
         imgs.append(load_img_inverse_mask_twomask(os.path.join(src, fname)))
-    print 'Loaded images in directory %s'%src
+    print ('Loaded images in directory %s'%src)
     map(lambda x: sys.stdout.write('Index %d image %s\n'%(x[0],x[1])), zip(range(len(filenames)), filenames))
     print 
     sys.stdout.flush()
