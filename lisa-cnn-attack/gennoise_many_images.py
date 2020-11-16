@@ -23,7 +23,7 @@ import math
 FLAGS = flags.FLAGS
 
 def main(argv=None):
-    print "going into setup"
+    print ("going into setup")
     op, model, sess, pholders, varops = setup_attack_graph()
 
     data = load_many_images(FLAGS.attack_srcdir)
